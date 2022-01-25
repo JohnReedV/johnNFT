@@ -1,1 +1,1 @@
-I deployed 100 Selfies to Moonbeam Mainnet for fun :)
+I deployed 100 Selfies to Moonbeam mainnet for fun :)
