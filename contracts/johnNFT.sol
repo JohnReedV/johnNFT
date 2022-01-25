@@ -40,13 +40,4 @@ contract johnNFT is ERC721, ERC721URIStorage, Ownable {
         supply = totalsupply;
         return supply;
     }
-
-    function burn(uint256 tokenId) public {
-        require (msg.sender == ERC721.ownerOf(tokenId), "You are not the owner");
-        _burn(tokenId);
-    }
-
-    function whoOwns(uint256 tokenId) public view returns (address)  {
-        return ERC721.ownerOf(tokenId);
-    }
 }
