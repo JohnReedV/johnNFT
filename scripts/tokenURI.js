@@ -6,7 +6,7 @@ const provider = new ethers.providers.JsonRpcProvider(
 
 async function mint() {
   const instance = await ethers.getContractFactory("johnNFT");
-  const diamondAddress = "0x725720431473249bf4D184B02a75693fC30313fa";
+  const diamondAddress = "0xB2Ef1c9bFC998f7D775f2b0380188d74F773173E";
   const contract = new ethers.Contract(diamondAddress, instance.interface, provider);
 
   const uri = await contract.tokenURI(89);

@@ -5,7 +5,7 @@ const provider = new ethers.providers.JsonRpcProvider(
   async function burn() {
     const [accounts] = await ethers.getSigners();
     const instance = await ethers.getContractFactory("johnNFT");
-    const address = "0x725720431473249bf4D184B02a75693fC30313fa";
+    const address = "0xB2Ef1c9bFC998f7D775f2b0380188d74F773173E";
     const contract = new ethers.Contract(address, instance.interface, provider)
     const Contract = contract.connect(accounts)
 
